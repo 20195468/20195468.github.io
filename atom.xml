@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://20195468.github.io</id>
     <title>Gridea</title>
-    <updated>2020-10-07T09:55:29.033Z</updated>
+    <updated>2020-10-07T09:59:45.491Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://20195468.github.io"/>
     <link rel="self" href="https://20195468.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>panghuhu&apos;s blog</subtitle>
     <logo>https://20195468.github.io/images/avatar.png</logo>
     <icon>https://20195468.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
