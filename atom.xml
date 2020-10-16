@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://20195468.github.io</id>
     <title>Gridea</title>
-    <updated>2020-10-16T04:21:45.836Z</updated>
+    <updated>2020-10-16T04:23:16.213Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://20195468.github.io"/>
     <link rel="self" href="https://20195468.github.io/atom.xml"/>
@@ -18,11 +18,11 @@
         <updated>2020-10-16T03:52:16.000Z</updated>
         <content type="html"><![CDATA[<p>谈及区块链技术就免不了谈比特币。也就是说比特币是区块链的一种典型表现形式。<br>
 通过比特币来学习区块链中的核心技术</p>
-<h2 id="什么是比特币">什么是比特币</h2>
+<h2 id="一什么是比特币">一：什么是比特币</h2>
 <p>比特币是一种分布式的点对点的<strong>数字货币</strong>。可以在世界上任何两个人之间<strong>及时</strong>（instantly）</p>
 <p><strong>安全地</strong>（securely）进行货币交换。<br>
 从某种意义上说它更像一种纯粹的电子货币。（区别于支付宝，微信的支付方式）</p>
-<h2 id="二比特币的由来">二：比特币的由来</h2>
+<h2 id="二比特币的由来与发展">二：比特币的由来与发展</h2>
 <p>创始人：中本聪（一位神秘的比特币大佬）</p>
 <ol start="2008">
 <li></li>
