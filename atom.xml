@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://20195468.github.io</id>
     <title>Gridea</title>
-    <updated>2020-10-07T10:19:40.229Z</updated>
+    <updated>2020-10-16T04:21:45.836Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://20195468.github.io"/>
     <link rel="self" href="https://20195468.github.io/atom.xml"/>
@@ -10,6 +10,42 @@
     <logo>https://20195468.github.io/images/avatar.png</logo>
     <icon>https://20195468.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[区块链技术——比特币原理]]></title>
+        <id>https://20195468.github.io/post/qu-kuai-lian-ji-zhu-bi-te-bi-yuan-li/</id>
+        <link href="https://20195468.github.io/post/qu-kuai-lian-ji-zhu-bi-te-bi-yuan-li/">
+        </link>
+        <updated>2020-10-16T03:52:16.000Z</updated>
+        <content type="html"><![CDATA[<p>谈及区块链技术就免不了谈比特币。也就是说比特币是区块链的一种典型表现形式。<br>
+通过比特币来学习区块链中的核心技术</p>
+<h2 id="什么是比特币">什么是比特币</h2>
+<p>比特币是一种分布式的点对点的<strong>数字货币</strong>。可以在世界上任何两个人之间<strong>及时</strong>（instantly）</p>
+<p><strong>安全地</strong>（securely）进行货币交换。<br>
+从某种意义上说它更像一种纯粹的电子货币。（区别于支付宝，微信的支付方式）</p>
+<h2 id="二比特币的由来">二：比特币的由来</h2>
+<p>创始人：中本聪（一位神秘的比特币大佬）</p>
+<ol start="2008">
+<li></li>
+</ol>
+<p>•8月 “bitcoin.org” 域名注册</p>
+<p>•10月学术文章《比特币：一种点对点式的电子现金系统》（Bitcoin: A Peer-to-Peer Electronic Cash System）发表</p>
+<p>•11月 比特币项目上线</p>
+<p>2009</p>
+<p>•01.03 比特币的第一个区块（创世块）产生 18:15:05 GMT</p>
+<p>•01.12 比特币的第一个交易产生：第170块 From Satoshi to Hal Finney</p>
+<p>经过近十年的发展，比特币蒸蒸日上，并在18年创下了价值巅峰。<br>
+<img src="https://20195468.github.io/post-images/1602821870609.png" alt="" loading="lazy"></p>
+<h2 id="比特币的特点">比特币的特点</h2>
+<p>去中心化 Decentralized</p>
+<p>分布式 Distributed</p>
+<p>民主自治的 Democratic</p>
+<p>匿名保护隐私的Anonymous</p>
+<p>方便快捷 Fast, cheap, and irreversible</p>
+<p>安全 Secure</p>
+<p>无双花No double spending</p>
+<p>持续更新中......</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://20195468.github.io/post/hello-gridea/</id>
