@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://20195468.github.io</id>
     <title>Gridea</title>
-    <updated>2020-10-16T04:37:42.064Z</updated>
+    <updated>2020-10-20T03:25:55.440Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://20195468.github.io"/>
     <link rel="self" href="https://20195468.github.io/atom.xml"/>
@@ -10,6 +10,81 @@
     <logo>https://20195468.github.io/images/avatar.png</logo>
     <icon>https://20195468.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[反转链表（java实现）]]></title>
+        <id>https://20195468.github.io/post/fan-zhuan-lian-biao-java-shi-xian/</id>
+        <link href="https://20195468.github.io/post/fan-zhuan-lian-biao-java-shi-xian/">
+        </link>
+        <updated>2020-10-20T03:24:30.000Z</updated>
+        <content type="html"><![CDATA[<p>题目描述：定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表的头节点。</p>
+<p>示例：</p>
+<pre><code>输入: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL
+输出: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL
+</code></pre>
+<p>限制：</p>
+<pre><code>0 &lt;= 节点个数 &lt;= 5000 
+</code></pre>
+<h2 id="一非迭代解法双指针法">一：非迭代解法（双指针法）</h2>
+<p>申请两个指针分别为previous和current</p>
+<p>current：表示当前链表的位置（初始化指向头指针）</p>
+<p>previous：表示前一位置（初始化指向空）</p>
+<p>链表反转时，当前节点指向前一节点</p>
+<p>即：current.next = previous;</p>
+<p><strong>(值得注意的是，当该步骤执行后，当前节点的下一节点会丢失</strong></p>
+<p><strong>解决方法：在该步骤之前再申请一节点（temp）保存当前节点的下一节点位置。</strong></p>
+<p><strong>即：temp=current.next；)</strong></p>
+<p>后 当前指针和前一指针向前移动</p>
+<p>previous = current;</p>
+<p>current = temp;</p>
+<p>完整代码为：</p>
+<pre><code>ListNode pre = null;
+ListNode current = head;
+ListNode temp = null;
+while (current != null) {
+    //保存后一个结点的位置
+    temp = current.next;
+    //将当前节点指向上一节点
+    current.next = pre;
+    //当前和前一位置向后移动
+    pre = current;
+    current = temp;
+}
+return pre;
+</code></pre>
+<h2 id="二递归解法">二：递归解法</h2>
+<p>递归问题：1：一个问题可以分为若干个子问题</p>
+<p>​                   2：某些子问题是原子的，另外一些子问题与原问题的逻辑相同</p>
+<p>​					典型的有<strong>汉诺塔问题，求阶乘</strong>等</p>
+<p>​					**注：**然而对于一个问题，能用循环就不用递归（前提是循环结构实现起来比较简单）</p>
+<p>​							递归问题的本质实质就是对栈的使用。</p>
+<p>递归结构：</p>
+<p>public Status digui(参数0,1,2...){</p>
+<p>​		if(终止条件){</p>
+<p>​			return;</p>
+<p>​		}</p>
+<p>​		逻辑处理（原子，可以存在也可以不存在）</p>
+<p>​		//递归调用</p>
+<p>​		digui(参数0,1,2...)；</p>
+<p>​		逻辑处理（原子，可以存在也可以不存在）</p>
+<p>}</p>
+<p>对于本题递归时从链表的末尾进行翻转，依次向前</p>
+<p>代码实现</p>
+<pre><code>public ListNode reverseList(ListNode head) {
+    //终止条件当前为空或者下一节点为空
+    if (head == null || head.next == null)
+        return head;
+    //递归调用，找到链表末尾
+    ListNode current = reverseList(head.next);
+    //对节点进行翻转
+    ListNode temp = head.next;
+    temp.next = head;
+    //此时head表示链表的最后一个节点，应指向null
+    head.next = null;
+    return current;
+}
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[区块链技术——比特币原理]]></title>
         <id>https://20195468.github.io/post/qu-kuai-lian-ji-zhu-bi-te-bi-yuan-li/</id>
