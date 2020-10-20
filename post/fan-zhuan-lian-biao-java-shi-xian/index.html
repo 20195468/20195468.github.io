@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>反转链表（java实现） | Gridea</title>
-<link rel="shortcut icon" href="https://20195468.github.io/favicon.ico?v=1603164350231">
+<link rel="shortcut icon" href="https://20195468.github.io/favicon.ico?v=1603202815643">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://20195468.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="反转链表（java实现） | Gridea - Atom Feed" href="https://20195468.github.io/atom.xml">
@@ -24,7 +24,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://20195468.github.io">
-  <img class="avatar" src="https://20195468.github.io/images/avatar.png?v=1603164350231" alt="">
+  <img class="avatar" src="https://20195468.github.io/images/avatar.png?v=1603202815643" alt="">
   </a>
   <h1 class="site-title">
     Gridea
@@ -133,15 +133,24 @@ return pre;
 <p>​					**注：**然而对于一个问题，能用循环就不用递归（前提是循环结构实现起来比较简单）</p>
 <p>​							递归问题的本质实质就是对栈的使用。</p>
 <p>递归结构：</p>
-<p>public Status digui(参数0,1,2...){</p>
-<p>​		if(终止条件){</p>
-<p>​			return;</p>
-<p>​		}</p>
-<p>​		逻辑处理（原子，可以存在也可以不存在）</p>
-<p>​		//递归调用</p>
-<p>​		digui(参数0,1,2...)；</p>
-<p>​		逻辑处理（原子，可以存在也可以不存在）</p>
-<p>}</p>
+<pre><code>public Status digui(参数0,1,2...){
+
+​		if(终止条件){
+
+​			return;
+
+​		}
+
+​		逻辑处理（原子，可以存在也可以不存在）
+
+​		//递归调用
+
+​		digui(参数0,1,2...)；
+
+​		逻辑处理（原子，可以存在也可以不存在）
+
+}
+</code></pre>
 <p>对于本题递归时从链表的末尾进行翻转，依次向前</p>
 <p>代码实现</p>
 <pre><code>public ListNode reverseList(ListNode head) {
